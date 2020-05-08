@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+//apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -31,10 +32,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
 }
 
-apply plugin: 'maven'
-
+/*publish {
+    userOrg = 'zdq-lyy'                                         //bintray.com 账号用户名
+    groupId = 'com.tiange'                                        //唯一 id，最后依赖的库名组成部分之一
+    artifactId = 'test-util'                                    //仓库名
+    publishVersion = '1.0.0'                                    //版本号
+    desc = 'for android dynamic request permission'            //描述
+    website = ''   //开源项目网址
+}*/
 
 
 
