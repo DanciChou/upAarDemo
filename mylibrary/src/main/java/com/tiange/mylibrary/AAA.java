@@ -18,6 +18,7 @@ public class AAA {
     }
 
     public void sumResult(Context context){
+
         Toast.makeText(context,"A + B  =" +getSum(),Toast.LENGTH_SHORT).show();
     }
 }
